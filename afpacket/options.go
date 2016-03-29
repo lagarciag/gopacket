@@ -132,7 +132,8 @@ func parseOptions(opts ...interface{}) (ret options, err error) {
 		case OptSocketType:
 			ret.socktype = v
 		default:
-			err = fmt.Errorf("unknown type in options")
+			err = fmt.Errorf("unknown type in options...")
+			fmt.Println("type",v)
 			return
 		}
 	}
